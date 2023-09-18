@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    
+</head>
+<body>
+
+    <h1 id="university_name">FAculltr</h1>
+    <script src="assets/js/main.js"></script>
+        
+    <!--Fakulte listelenecek-->
+    <!-- örn : ?facultyId=101 querystring-->
+
+    <!--
+        https://reqres.in/detail.html?id=1&categoryId=12
+        querystring değerleri :
+        id = 1
+        categoryId=12
+
+        https://reqres.in/detail.html?id=1&categoryId=12&categoryId=13
+        querystring değerleri :
+        id = 1
+        categoryId=[12,13]
+
+        okuma
+        detail.html
+        const urlParams = new URLSearchParams(window.location.search);
+        const myId = urlParams.get('id');
+        const myCategoryId =  urlParams.get('categoryId')
+        console.log(myParam)
+
+
+    -->
+</body>
+</html>

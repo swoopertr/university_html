@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculties</title>
+</head>
+<body>
+    <h1>Workingtech University</h1>
+    <h2>Faculty Details</h2>
+
+    <select id="facultySelect">
+        <option value="101">Faculty 101</option>
+        <option value="102">Faculty 102</option>
+        <option value="103">Faculty 103</option>
+    </select>
+
+    <button onclick="displayDetails()">Show Details</button>
+
+    <h2>Lessons:</h2>
+    <ul id="lessonList"></ul>
+
+    <h2>Students:</h2>
+    <ul id="studentList"></ul>
+
+<script>
+
+async function lessonsFetchData() {
+        
+        let lessonsResponse = await fetch('data/lessons.json').then((x)=>x.json());
+        return lessonsFetchData;
+    }
+
+async function studentsFetchData() {
+                
+        let studentsResponse = await fetch('data/students.json').then((y)=>y.json());
+        return studentsResponse;
+    }
+
+</script>
+
+</body>
+</html>
